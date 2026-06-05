@@ -1,0 +1,441 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f4ef;
+    color:#333;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#4b2e2e;
+    color:white;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:1.5rem;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:#f4c27a;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url("https://thumbs.dreamstime.com/b/cup-hot-coffee-foam-sharp-focus-foam-coffee-beans-scattered-background-burlap-background-beautiful-light-photo-345328512.jpg");
+    
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+
+.btn{
+    padding:12px 25px;
+    border:none;
+    background:#f4c27a;
+    color:#333;
+    cursor:pointer;
+    font-size:1rem;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background:#e6b15d;
+}
+
+/* Menu */
+
+.menu{
+    padding:80px 8%;
+}
+
+.menu h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.menu-container{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px;
+}
+
+.card span{
+    display:block;
+    padding:15px;
+    color:#8b4513;
+    font-weight:bold;
+}
+
+/* About */
+
+.about{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    margin-top:20px;
+    line-height:1.8;
+}
+
+/* Contact */
+
+.contact{
+    padding:80px 10%;
+}
+
+.contact h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.contact form{
+    max-width:600px;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact input,
+.contact textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact button{
+    background:#4b2e2e;
+    color:white;
+    border:none;
+    padding:15px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    background:#4b2e2e;
+    color:white;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero-content h1{
+        font-size:2rem;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+}
+.cart-section{
+    padding:80px 10%;
+}
+
+.cart-section h2{
+    margin-bottom:20px;
+}
+
+.cart-item{
+    background:white;
+    padding:15px;
+    margin:10px 0;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.add-btn{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border:none;
+    background:#4b2e2e;
+    color:white;
+    cursor:pointer;
+}
+
+.add-btn:hover{
+    background:#6b3f3f;
+}
+
+.cart-icon{
+    color:white;
+    font-weight:bold;
+}
+.quantity-controls{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin:10px 0;
+}
+
+.quantity-controls button{
+    padding:5px 12px;
+    border:none;
+    cursor:pointer;
+    background:#4b2e2e;
+    color:white;
+}
+
+.remove-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    cursor:pointer;
+    margin-top:10px;
+}
+#clear-cart-btn{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    background:#333;
+    color:white;
+    cursor:pointer;
+}
+.search-container{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.search-container input{
+    width:300px;
+    max-width:90%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.filter-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.filter-buttons button{
+    padding:10px 20px;
+    border:none;
+    background:#4b2e2e;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.filter-buttons button:hover{
+    background:#6b3f3f;
+}
+.checkout-section{
+    display:none;
+    padding:80px 10%;
+}
+
+.success-section{
+    display:none;
+    text-align:center;
+    padding:100px 20px;
+}
+.checkout-section form{
+    max-width:600px;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.checkout-section input,
+.checkout-section textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.checkout-section button{
+    padding:12px;
+    border:none;
+    background:#4b2e2e;
+    color:white;
+    cursor:pointer;
+}
+
+#checkout-btn{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:#4b2e2e;
+    color:white;
+    cursor:pointer;
+}
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.2);
+}
+button{
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+.fade-in{
+    opacity:0;
+    transform:translateY(30px);
+    animation:fadeIn 1s forwards;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+#toast{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+
+    background:#4b2e2e;
+    color:white;
+
+    padding:15px 25px;
+
+    border-radius:5px;
+
+    display:none;
+}
+.filter-buttons button.active{
+    background:#f4c27a;
+    color:#333;
+}
+.hamburger{
+    display:none;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    .hamburger{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+}
