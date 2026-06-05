@@ -287,7 +287,7 @@ footer{
     margin-bottom:20px;
 }
 
-.search-container input{
+#search-container input{
     width:300px;
     max-width:90%;
     padding:12px;
